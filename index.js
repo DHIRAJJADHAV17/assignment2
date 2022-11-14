@@ -1,6 +1,5 @@
 const http = require('http')
 const fs= require("fs");
-
 let homecontent="";
 let filecontent="";
 let reg="";
@@ -46,6 +45,5 @@ http.createServer((request,response) =>{
         default:
             response.write(homecontent)
             response.end();
-            break;
-    }
-}).listen(3000);
+            break; }
+}).listen(args["port"]);
